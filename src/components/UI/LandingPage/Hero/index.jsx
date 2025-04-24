@@ -1,13 +1,15 @@
+import HeroImg from '../../../../assets/image/hero.svg';
+
 const Hero = () => {
   return (
     <section id="beranda" className="h-full pt-20">
       <div className="grid grid-cols-12">
         <div className="col-span-12 lg:col-span-7 order-1 lg:order-2">
-          <img src={''} alt="Hero 1" loading="" />
+          <img src={HeroImg} alt="Hero 1" loading="" />
         </div>
 
         <div className="col-span-12 lg:col-span-5 order-2 lg:order-1 mx-4 flex flex-col justify-center">
-          <h1 className="text-4xl text-center md:text-6xl leading-tight">
+          <h1 className="text-4xl text-center md:text-5xl leading-tight">
             Jadilah Bagian dari Garda Terdepan
             <span className="text-primary"> Penanggulangan Bencana </span>
           </h1>

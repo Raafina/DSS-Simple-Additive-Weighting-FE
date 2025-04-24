@@ -7,7 +7,7 @@ const FAQ = [
       <ul className="list-disc ms-5 ">
         <li>Memperoleh bimbingan dalam pelaksanaan praktek kerja.</li>
         <li>
-          Memperoleh surat keterangan pelaksanaan PKL setelah peserta PKL
+          Memperoleh surat keterangan pelaksanaan Magang setelah peserta Magang
           menyelesaikan seluruh kewajiban.
         </li>
         <li>Sertifikat Magang</li>

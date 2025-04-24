@@ -87,7 +87,7 @@ const Login = () => {
                   )}
                 />
                 <Button color="primary" size="lg" type="submit">
-                  {loading ? <Spinner /> : 'Login'}
+                  {loading ? <Spinner variant="white" /> : 'Login'}
                 </Button>
               </form>
             </CardBody>

@@ -1,7 +1,9 @@
+import NotFoundImg from '../../../assets/image/not-found.svg';
+
 const NotFound = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <img src={''} alt="Not Found" width={400} height={400} />
+      <img src={NotFoundImg} alt="Not Found" width={400} height={400} />
       <h1 className="text-2xl text-center md:text-4xl leading-tight">
         Halaman tidak ditemukan
       </h1>
