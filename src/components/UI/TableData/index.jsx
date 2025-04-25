@@ -109,7 +109,16 @@ const TableData = (props) => {
     >
       <TableHeader columns={columns}>
         {(column) => (
-          <TableColumn key={column.uid} className="font-sans">
+          <TableColumn
+            key={column.uid}
+            className={`font-sans ${
+              column.uid === 'CV_score' ||
+              column.uid === 'motivation_letter_score' ||
+              column.uid === 'total_score'
+                ? 'text-center'
+                : ''
+            } `}
+          >
             {column.name}
           </TableColumn>
         )}

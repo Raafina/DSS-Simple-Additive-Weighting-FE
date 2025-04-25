@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { COLUMN_LISTS_RESULT_DATA } from './ResultData.constant';
 import useResultData from './useResultData';
 import SearchResultDataModal from './SearchResultDataModal';
+import { BiMailSend } from 'react-icons/bi';
 
 const ResultData = () => {
   const {
@@ -30,22 +31,26 @@ const ResultData = () => {
   const renderCell = (item, columnKey) => {
     const cellValue = item[columnKey];
     switch (columnKey) {
-      case 'accepted_division':
+      case 'CV_score':
+        return <p className="text-center">{cellValue}</p>;
+      case 'motivation_letter_score':
+        return <p className="text-center">{cellValue}</p>;
+      case 'total_score':
+        return <p className="text-center">{cellValue}</p>;
+      case 'actions':
         return (
-          <p
-            className={`inline px-2 py-1 rounded-lg ${
-              {
-                humas: 'bg-green-700 text-white',
-                makroprudensial: 'bg-primary text-white',
-                sistem_pembayaran: 'bg-red-700 text-white',
-                internal: 'bg-indigo-400 text-white',
-                pengelolaan_uang_rupiah: 'bg-slate-700 text-white',
-                moneter: 'bg-cyan-500 text-white',
-              }[cellValue] || ''
-            }`}
-          >
-            {cellValue}
-          </p>
+          <>
+            <button
+              type="button"
+              className="bg-blue text-white p-2 rounded-xl hover:bg-opacity-80"
+              // onClick={() => {
+              //   setSelectedId(item.id);
+              //   deleteApplicationDataModal.onOpen(item);
+              // }}
+            >
+              <BiMailSend size={15} />
+            </button>
+          </>
         );
       default:
         return cellValue;

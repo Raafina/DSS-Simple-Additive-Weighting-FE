@@ -20,12 +20,16 @@ const COLUMN_LISTS_RESULT_DATA = [
     uid: 'CV_score',
   },
   {
-    name: 'SKOR ML',
+    name: 'SKOR MOTIVATION LETTER',
     uid: 'motivation_letter_score',
   },
   {
-    name: 'SKOR TOTAL',
+    name: 'SKOR AKHIR',
     uid: 'total_score',
+  },
+  {
+    name: 'AKSI',
+    uid: 'actions',
   },
 ];
 

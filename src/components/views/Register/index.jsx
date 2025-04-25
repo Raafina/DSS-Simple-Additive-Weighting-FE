@@ -4,14 +4,11 @@ import useRegister from './useRegister';
 import {
   Card,
   CardBody,
-  Select,
-  SelectItem,
   DatePicker,
   Button,
   Input,
   Spinner,
 } from '@heroui/react';
-import { COLLEGE_MAJOR, INTERN_CATEGORY } from './Register.constant';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -125,7 +122,7 @@ const RegisterForm = () => {
                     />
                   )}
                 />
-                <Controller
+                {/* <Controller
                   name="college_major"
                   control={control}
                   render={({ field }) => (
@@ -144,7 +141,7 @@ const RegisterForm = () => {
                       ))}
                     </Select>
                   )}
-                />
+                /> */}
                 <Controller
                   name="semester"
                   control={control}
@@ -184,7 +181,7 @@ const RegisterForm = () => {
                       />
                     )}
                   />
-                  <Controller
+                  {/* <Controller
                     name="intern_category"
                     control={control}
                     render={({ field }) => (
@@ -203,8 +200,7 @@ const RegisterForm = () => {
                         ))}
                       </Select>
                     )}
-                  />
-
+                  /> */}
                   <Controller
                     name="start_month"
                     control={control}

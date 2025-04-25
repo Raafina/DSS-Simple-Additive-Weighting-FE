@@ -27,7 +27,7 @@ export const getSAWResults =
         year,
         page: currentPage,
         limit: 10,
-        sort: 'asc',
+        sort: 'desc',
         search: search,
       },
     };

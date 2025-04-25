@@ -21,7 +21,7 @@ const COLUMN_LISTS_APPLICATION_DATA = [
     uid: 'CV_score',
   },
   {
-    name: 'SKOR ML',
+    name: 'SKOR PROYEK AKHIR',
     uid: 'motivation_letter_score',
   },
   {
